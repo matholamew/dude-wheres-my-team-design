@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dude, Where's My Team?</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #1193d4;
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#111618] text-white">
+<div class="relative flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-[#111618]/80 backdrop-blur-sm">
+<div class="flex items-center justify-between p-4">
+<div class="w-12"></div>
+<h1 class="text-xl font-bold text-center">Dude, Where's My Team?</h1>
+<div class="w-12 flex justify-end">
+<button class="p-2">
+<span class="material-symbols-outlined text-2xl">
+                            settings
+                        </span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="p-4">
+<div class="aspect-video w-full bg-cover bg-center rounded-2xl shadow-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDUL5hC6DUzi8fWf0QfKLOFYYJNbXO9s5nLYATHwxXdJBsxskybDtbhixsdw-02aoQ3WSp4LmUjo_idZwLa59lwzdAC3UxZM2JCQWC_BjfvvHlnLFH7uK0Lcn3hDy7Tij4HMVOD93r_oFJ92gLe9IW3Sx41fg7dxwrVAEEgzj7p7GXKrPHZ6BJxpQ_Nn7zVF_wa9xnqylfbkscTg3XNt5hb1jIF2U4c5MPsmkst3pYdD1kVYjYWoobQHGYnlNl8IJpkoHoukF05wDo");'>
+</div>
+</div>
+<div class="px-4 pt-2 pb-4">
+<h2 class="text-2xl font-bold mb-4">Team Status</h2>
+<div class="space-y-3">
+<div class="flex items-center gap-4 p-3 bg-[#1C2327] rounded-xl">
+<img alt="Ethan's avatar" class="h-14 w-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATRz7FemcKeSSz8Wz42JUNtgWnWYzXZ4O8COPs17bOI9Ry-CuZUip0CBFRlBf_XKPHM7AC5gTnF0_ogLlWnKTx2x45DlCQkZkO8db5Luo9hm5nTOv2v7WN5b8DjPdZDUOz0Byj2NiZEsZUeVsR1cgzFDYO1RXOiGGyWG2AO6a_dBBYHplFx4SMf9ERiHwPLp0ZGBTITfpUPcUEGzr0xgHKDxkuZn0Oh-BVWfdW5FXdpCUiagqCq-FI2evNtqnIzReX_6ZeheANbHg"/>
+<div class="flex-1">
+<p class="text-lg font-semibold">Ethan</p>
+<p class="text-sm text-gray-400">Runner 1</p>
+</div>
+<div class="flex items-center gap-2 text-sm text-green-400">
+<span class="material-symbols-outlined text-lg">
+                                directions_run
+                            </span>
+<span>Active</span>
+</div>
+</div>
+<div class="flex items-center gap-4 p-3 bg-[#1C2327] rounded-xl">
+<img alt="Liam's avatar" class="h-14 w-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQZiXcMGELnxNAGr5G-OUshsk9NpJeFJOA1RdUa8VwLHX1hJ7eEjGfP1CJBvbZ1mgXxV_Vb2-HE1_IgAPeXH2x3MB6XbMcFyZuMg5eyn_dgchzBme7jfom95Wb5pOGp1Ll11bniI6iXfFm31CqtxvRUM40gC8ZDMzvvqknhwBUxvLmrYMQnzHqEyqL-Vs6NITaT7Bof60HG2_ahIyE6n9EwkJN2knJVFR-g5_NctC2UEDGsUWPVavq8fk8z8fSQPcs_psPmpYffLA"/>
+<div class="flex-1">
+<p class="text-lg font-semibold">Liam</p>
+<p class="text-sm text-gray-400">Runner 2</p>
+</div>
+<div class="flex items-center gap-2 text-sm text-gray-400">
+<span class="material-symbols-outlined text-lg">
+                                more_horiz
+                            </span>
+<span>Waiting</span>
+</div>
+</div>
+<div class="flex items-center gap-4 p-3 bg-[#1C2327] rounded-xl">
+<img alt="Noah's avatar" class="h-14 w-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSm64a6VISUmbYMethQuxn_r39JLmGz2nGu8zQZfAP6CHu3t-KEVAFPdfONfWI_5jAoOQLCyEe26tvMhviV1RTaEOLrAU7hlabl7aMkFQMW-k64ShWrQUBfLL5hEAY2-jtaDT6_srnGuTPSJgE_hbxVNbAI90QWOGH1CDi3CJ7j3v_H0qFGkI8I8c3zyENVgVt6Vcy-FHLpqbhl6yC0HvNPeFuTTBtDufmCRkfruteBhQDEkFNlugXiwbWaDYDvS2OMjXXtCbC9rQ"/>
+<div class="flex-1">
+<p class="text-lg font-semibold">Noah</p>
+<p class="text-sm text-gray-400">Runner 3</p>
+</div>
+<div class="flex items-center gap-2 text-sm text-gray-400">
+<span class="material-symbols-outlined text-lg">
+                                more_horiz
+                            </span>
+<span>Waiting</span>
+</div>
+</div>
+<div class="flex items-center gap-4 p-3 bg-[#1C2327] rounded-xl">
+<img alt="Oliver's avatar" class="h-14 w-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdqsn0uyVZ9pBbHiLxYQcB5NqsnGoE0Ccchh7bJP752NNrFKRJv-qVg4O5-4AI6uh5DqmQLEUPDQRb8mqhV9J-tSdsD9J-3VVEaW8udl5F0LY_vCKVWz808pY4GMK4HxWfnbfeRs1VbUCwpuGD2MlPd_hy8FbquFgMmGrS8iRSE_40HNpOSm-iA93T_ADKUJFkAVroIs5sAkM9JVwkoISTFi3IyfnZ8z9hOBqgx1zaKlynmjtzAy5TwMTpOpr3Rsvag55C9kkv2Yo"/>
+<div class="flex-1">
+<p class="text-lg font-semibold">Oliver</p>
+<p class="text-sm text-gray-400">Runner 4</p>
+</div>
+<div class="flex items-center gap-2 text-sm text-gray-400">
+<span class="material-symbols-outlined text-lg">
+                                more_horiz
+                            </span>
+<span>Waiting</span>
+</div>
+</div>
+<div class="flex items-center gap-4 p-3 bg-[#1C2327] rounded-xl">
+<img alt="Elijah's avatar" class="h-14 w-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWJauyIM2BhX0R9kPvsqpP-VI5L36e-CDEwK87qbIPUqAjAh6wc5oC_wN5_WL02m-wl4xErM9RhnfCSnVWKLDMfcfHVOtZFzDQEzznSzu7wGAqm7Tvcl65tLT5xK2_gVHUpSAQDF1O4-wx4aTjgUS4ngPgFcSjfVy6rksdq-I0xrEfHo4P7aDVv7NNMu2QixwaE31_fsrJqhVqWxKM2YHbgDZkEsEZRumNfKIs9zlBodUiHDdc_C7_pefLdDALxROnUdNFlzRaDHo"/>
+<div class="flex-1">
+<p class="text-lg font-semibold">Elijah</p>
+<p class="text-sm text-gray-400">Runner 5</p>
+</div>
+<div class="flex items-center gap-2 text-sm text-gray-400">
+<span class="material-symbols-outlined text-lg">
+                                more_horiz
+                            </span>
+<span>Waiting</span>
+</div>
+</div>
+<div class="flex items-center gap-4 p-3 bg-[#1C2327] rounded-xl">
+<img alt="James' avatar" class="h-14 w-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw0c7HeOoYtqyYYVU4Xrqhc2ESjidHUy42b2g1umGt2L2IG2q3sOAKCiyYpqqf4Cy_j8bVnB2nTKjS1JS64aJO2f0I4STfQwpUxA1_VOR3TnSDrf7PlWXIU00sXy_nXjXp2TWbuImxuK3mSMZHn4hNDESw7rfQENIf_pGUla0UvnswkvizdKyS9xNGwxLz0iJQ9ZzHNlK8CCGCHbh1Th70SUIxxU1zn-HmLi2OY03wIDh1dhWQstmnfMrFdtKYGMQA_xPhR-9qj6E"/>
+<div class="flex-1">
+<p class="text-lg font-semibold">James</p>
+<p class="text-sm text-gray-400">Runner 6</p>
+</div>
+<div class="flex items-center gap-2 text-sm text-gray-400">
+<span class="material-symbols-outlined text-lg">
+                                more_horiz
+                            </span>
+<span>Waiting</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-[#1c2327]/80 backdrop-blur-sm border-t border-[#283339]">
+<nav class="flex justify-around items-center h-20">
+<a class="flex flex-col items-center gap-1 text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl">chat</span>
+<span class="text-xs font-medium">Chat</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl">info</span>
+<span class="text-xs font-medium">Race Info</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl">account_circle</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
