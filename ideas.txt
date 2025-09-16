@@ -1,0 +1,351 @@
+Dude, Where’s My Team?
+
+Key Features:
+1. Location Tracking
+   - Interactive map showing users' locations
+   - Multi-platform support (Android & iOS)
+2. Communication
+   - In-app chat window
+   - Messaging between team members
+3. Travel Resources
+   - Tips & Tricks Section
+     • Best eating locations
+     • Best sleeping locations
+     • Categorized by vehicle (Van One, Van Two)
+4. Personal Management
+   - Individual Packing List
+     • Exportable to: 
+     - Google Keep
+     - Apple Notes
+     - Default share menu (iOS/Android)
+
+Security & Access Control:
+- Multi-team functionality
+- Team-specific data isolation
+  • Location data
+  • Chat rooms
+  • Favorites
+- User-level note privacy
+  • Individual access to personal notes only
+
+Technical Considerations:
+- Cross-platform development
+- Secure authentication
+- Granular permission management
+
+---
+
+App Customization Feature: Team Themes
+
+Key Points:
+- Allow teams to personalize app interface
+- Theme customization options: 
+  - Select team/favorite colors
+  - Option to use default theme
+- Enhances user experience and team identity
+
+Potential Implementation:
+- Color picker for interface elements
+- Preset color palettes
+- Easy toggle between custom and default themes
+
+Benefits:
+- Increased user engagement
+- Team branding
+- Personalized app experience
+
+---
+
+Team Management Feature Proposal:
+1. Captain Role
+   - Similar to Ragnar's model
+   - Responsibilities: 
+     - Control team membership
+     - Share team location
+     - Create team within the app
+2. User Onboarding Process
+   - New users can: 
+     - Search for existing teams
+     - Create a new team if it doesn't exist
+     - Request to join an existing team
+3. Team Joining Mechanism
+   - Requires captain's approval
+   - Prevents unauthorized access
+4. Team Lifecycle
+   - Temporary teams
+   - Need to define specific duration
+   - Potential options: 
+     - Time-based expiration
+     - Manual dissolution by captain
+
+Key Considerations:
+- Implement clear permission levels
+- Ensure user-friendly team management
+- Develop robust team creation/joining workflow
+
+---
+
+App User Profile and Pace Tracking Features:
+1. User Profiles
+   - Individual profile for each user
+   - Include: 
+     - Name
+     - Pace
+     - "About Me" section
+2. Pace Tracking System
+   - Individual Pace Calculator 
+     - Per van
+     - Per team
+3. Runner Location Tracking
+   - "Start Leg" button 
+     - Enables individual runner location tracking
+     - Isolates tracking to specific runner
+     - Prevents tracking of other runners
+4. Real-Time Runner Management
+   - Dynamic runner updates 
+     - Ability to switch runners between legs
+     - Easy leg transition in-app
+     - Automatic pace adjustment based on: 
+       - Current location
+       - Current pace
+
+Key Benefits:
+- Personalized tracking
+- Precise location monitoring
+- Flexible runner management
+
+---
+
+Race Information Section:
+- Each Ragnar race (e.g., Ragnar Reach the Beach, Ragnar Cape Cod) requires a unique information page
+- Content sourced directly from official Ragnar website
+- Specific details tailored to individual race location and characteristics
+
+Emergency Support Feature:
+- SOS button for runners in distress
+- Allows immediate communication with team
+- Enables quick response if runner is injured or needs assistance
+
+Key Objectives:
+1. Provide comprehensive race-specific information
+2. Implement safety mechanism for runner protection
+
+---
+
+Team Management Permissions:
+
+Key Requirements:
+- Only Captain (Team Creator) can initially start a leg
+- Captain can designate 3 additional admins for the team (2 for each van)
+
+Admin Privileges:
+1. Start Leg Functionality
+2. User Management
+3. Limited to Specific Team
+
+Goal: Restrict leg start and user management to trusted team members (captain + 2 designated admins)
+
+Rationale: Prevent unrestricted access and maintain team control
+
+---
+
+App Name Concept: "Dude Where's My Team"
+
+Inspiration:
+- Wordplay based on movie title "Dude, Where's My Car?"
+- Reflects app's primary function: Team Location Tracking
+
+Key Features:
+- Real-time team member location tracking
+- Easy-to-use interface
+- Designed for collaborative teams
+
+Purpose:
+- Help teams quickly locate each other
+- Improve coordination and communication
+- Enhance workplace/group efficiency
+
+---
+
+**Development Plan for "Dude, Where’s My Team?"**
+
+**1. Initial Setup**
+- **Environment Setup**
+
+Install Flutter SDK: Ensure Flutter is set up and configured on your system.
+
+Set up IDE: Use Android Studio, Visual Studio Code, or IntelliJ IDEA for Flutter development.
+
+Install Dart: Ensure Dart is also installed, as it's required for Flutter.
+
+**Version Control**
+
+Set up Git for version control using GitHub or GitLab.
+
+**2. Project Structure**
+- **Create a New Flutter Project**
+
+Use Flutter CLI: ⁠flutter create dude_where_is_my_team
+
+**3. Integration with Supabase**
+- **Database Setup**
+
+Create a Supabase account and set up your database.
+
+Use Supabase SQL Editor to define your database schema for user profiles, teams, location data, chat, etc.
+
+**Flutter-Supabase Integration**
+
+Add Supabase dependencies to ⁠pubspec.yaml.
+
+Set up authentication, real-time updates, and data fetching using Supabase client in Flutter.
+
+**4. App Features Development**
+- **Location Tracking**
+
+Use ⁠geolocator or ⁠google_maps_flutter package for real-time location tracking.
+
+Integrate with Supabase to sync location data.
+
+**Chat and Communication**
+
+Implement chat feature using a real-time database approach by Supabase.
+
+**Travel Resources**
+
+Build a UI for the Tips & Tricks section, fetching data from Supabase.
+
+**Personal Management**
+
+Create functionality for packing list management, exportable to third-party note-taking apps.
+
+**5. UI/UX Design**
+- **Design Tools**
+
+Design high-fidelity prototypes in Figma or Sketch.
+
+Apply Material Design or Cupertino widgets for a native look on Android and iOS.
+
+**Theming and Customization**
+
+Implement theme customization and allow user-defined color schemes.
+
+**6. App Customization and Management**
+- **Team Management Features**
+
+Implement features for captain and admin roles, including team creation and management.
+
+Use Supabase’s role management features to handle permissions.
+
+**User Profile and Pace Tracking**
+
+Develop user profile screens using Flutter widgets.
+
+Design pace tracking system using a combination of Flutter UI logic and Supabase data.
+
+**7. Testing and Quality Assurance**
+- **Automated Testing**
+
+Write unit and widget tests using Flutter's built-in testing framework.
+
+**User Testing**
+
+Conduct usability tests with real users.
+
+**8. Security and Authentication**
+- **Secure Authentication**
+
+Implement Supabase authentication using OAuth, social logins, and magic links.
+
+**Data Security**
+
+Use Supabase's security policies to ensure data privacy.
+
+**9. Deployment and Maintenance**
+- **Release**
+
+Test release builds for both platforms.
+
+Publish on Google Play Store and Apple App Store.
+
+**Continuous Integration/Continuous Deployment (CI/CD)**
+
+Set up CI/CD pipelines using GitHub Actions to automate testing and deployment.
+
+**10. Post-Launch**
+- **Monitoring and Analytics**
+
+Integrate analytics services (e.g., Google Analytics) to track user behavior.
+
+**Feedback Loop**
+
+Collect user feedback and iterate on app improvements.
+
+---
+
+**Packages for Flutter with Supabase**
+1. **Supabase Integration**
+- **supabase_flutter**: This is the official package for integrating Supabase with Flutter. It supports authentication, real-time updates, and database interactions.
+
+dependencies:
+
+  supabase_flutter: ^0.2.2
+1. 
+
+**Location Tracking**
+- **geolocator**: This package provides easy access to platform-specific location services.
+
+dependencies:
+
+  geolocator: ^9.0.2
+- 
+  - 
+
+  **google_maps_flutter**: To display interactive maps with real-time updates.
+
+dependencies:
+
+  google_maps_flutter: ^2.2.0
+1. 
+
+**Chat and Communication**
+- **stream_chat_flutter**: This package can be used if you choose to integrate a robust chat feature.
+
+dependencies:
+
+  stream_chat_flutter: ^2.0.9
+1. 
+
+**Authentication and Security**
+- Integrated in **supabase_flutter** as it handles authentication within the Supabase ecosystem.
+
+**UI and Design**
+- **flutter_bloc**: Useful for state management if you prefer a bloc pattern.
+
+dependencies:
+
+  flutter_bloc: ^8.0.0
+- 
+  - 
+
+  **provider**: Another popular state management package, if you're not using bloc.
+
+dependencies:
+
+  provider: ^6.0.2
+1. 
+
+**User Interface Components**
+- **flutter_svg**: For SVG rendering, which can be useful for icons or other graphics.
+
+dependencies:
+
+  flutter_svg: ^1.1.6
+1. 
+
+**Utilities**
+- **url_launcher**: To open external URLs or deep links into apps.
+
+dependencies:
+
+  url_launcher: ^6.0.20
