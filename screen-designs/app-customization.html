@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Dude, Where's My Team? - App Customization</title>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -45,6 +46,11 @@
       min-height: max(884px, 100dvh);
     }
   </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
   </head>
 <body class="bg-[var(--background-color)]" style="font-family: 'Inter', sans-serif;">
 <div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
@@ -73,72 +79,85 @@
 </section>
 <section class="mb-8">
 <div class="flex items-center justify-between mb-4">
-<h2 class="text-[var(--text-secondary)] text-sm font-semibold uppercase tracking-wider">Team Color</h2>
-<button class="text-[var(--primary-color)] font-medium text-sm flex items-center gap-1">
-<span class="material-symbols-outlined">palette</span>
-              Color Picker
-            </button>
+<h2 class="text-[var(--text-secondary)] text-sm font-semibold uppercase tracking-wider">Team Theme</h2>
 </div>
-<div class="grid grid-cols-5 gap-4">
+<div class="bg-[var(--card-color)] p-4 rounded-xl">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-[var(--text-primary)] font-medium">Team Color</h3>
+<button class="text-[var(--primary-color)] font-medium text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-base">palette</span>
+                        Color Picker
+                    </button>
+</div>
+<div class="grid grid-cols-5 gap-4 mb-6">
 <label class="relative cursor-pointer">
 <input checked="" class="sr-only" name="team-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(255,99,71)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+<div class="w-12 h-12 rounded-full bg-[rgb(255,99,71)] ring-2 ring-offset-2 ring-offset-[var(--card-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
 </label>
 <label class="relative cursor-pointer">
 <input class="sr-only" name="team-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(70,130,180)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+<div class="w-12 h-12 rounded-full bg-[rgb(70,130,180)] ring-2 ring-offset-2 ring-offset-[var(--card-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
 </label>
 <label class="relative cursor-pointer">
 <input class="sr-only" name="team-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(50,205,50)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+<div class="w-12 h-12 rounded-full bg-[rgb(50,205,50)] ring-2 ring-offset-2 ring-offset-[var(--card-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
 </label>
 <label class="relative cursor-pointer">
 <input class="sr-only" name="team-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(255,215,0)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+<div class="w-12 h-12 rounded-full bg-[rgb(255,215,0)] ring-2 ring-offset-2 ring-offset-[var(--card-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
 </label>
 <label class="relative cursor-pointer">
 <input class="sr-only" name="team-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(218,112,214)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
-</label>
-<label class="relative cursor-pointer">
-<input class="sr-only" name="team-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(135,206,250)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+<div class="w-12 h-12 rounded-full bg-[rgb(218,112,214)] ring-2 ring-offset-2 ring-offset-[var(--card-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
 </label>
 </div>
-</section>
-<section>
+<div class="border-t border-[var(--border-color)] my-4"></div>
 <div class="flex items-center justify-between mb-4">
-<h2 class="text-[var(--text-secondary)] text-sm font-semibold uppercase tracking-wider">Favorite Color</h2>
+<h3 class="text-[var(--text-primary)] font-medium">Favorite Color</h3>
 <button class="text-[var(--primary-color)] font-medium text-sm flex items-center gap-1">
-<span class="material-symbols-outlined">palette</span>
-                  Color Picker
-              </button>
+<span class="material-symbols-outlined text-base">palette</span>
+                        Color Picker
+                    </button>
 </div>
 <div class="grid grid-cols-5 gap-4">
 <label class="relative cursor-pointer">
 <input class="sr-only" name="favorite-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(255,99,71)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+<div class="w-12 h-12 rounded-full bg-[rgb(255,99,71)] ring-2 ring-offset-2 ring-offset-[var(--card-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
 </label>
 <label class="relative cursor-pointer">
 <input checked="" class="sr-only" name="favorite-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(70,130,180)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+<div class="w-12 h-12 rounded-full bg-[rgb(70,130,180)] ring-2 ring-offset-2 ring-offset-[var(--card-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
 </label>
 <label class="relative cursor-pointer">
 <input class="sr-only" name="favorite-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(50,205,50)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+<div class="w-12 h-12 rounded-full bg-[rgb(50,205,50)] ring-2 ring-offset-2 ring-offset-[var(--card-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
 </label>
 <label class="relative cursor-pointer">
 <input class="sr-only" name="favorite-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(255,215,0)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+<div class="w-12 h-12 rounded-full bg-[rgb(255,215,0)] ring-2 ring-offset-2 ring-offset-[var(--card-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
 </label>
 <label class="relative cursor-pointer">
 <input class="sr-only" name="favorite-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(218,112,214)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+<div class="w-12 h-12 rounded-full bg-[rgb(218,112,214)] ring-2 ring-offset-2 ring-offset-[var(--card-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
 </label>
-<label class="relative cursor-pointer">
-<input class="sr-only" name="favorite-color" type="radio"/>
-<div class="w-14 h-14 rounded-full bg-[rgb(135,206,250)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
-</label>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-[var(--text-secondary)] text-sm font-semibold uppercase tracking-wider mb-4">Interface Elements</h2>
+<div class="space-y-4">
+<div class="bg-[var(--card-color)] p-4 rounded-xl flex items-center justify-between">
+<span class="text-[var(--text-primary)] font-medium">Header Color</span>
+<div class="w-10 h-10 rounded-full bg-[#FF6347] border-2 border-transparent"></div>
+</div>
+<div class="bg-[var(--card-color)] p-4 rounded-xl flex items-center justify-between">
+<span class="text-[var(--text-primary)] font-medium">Button Color</span>
+<div class="w-10 h-10 rounded-full bg-[#4682B4] border-2 border-transparent"></div>
+</div>
+<div class="bg-[var(--card-color)] p-4 rounded-xl flex items-center justify-between">
+<span class="text-[var(--text-primary)] font-medium">Icon Color</span>
+<div class="w-10 h-10 rounded-full bg-[#32CD32] border-2 border-transparent"></div>
+</div>
 </div>
 </section>
 </main>

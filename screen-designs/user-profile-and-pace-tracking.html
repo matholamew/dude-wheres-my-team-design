@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Dude, Where's My Team?</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1193d4;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-900">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-gray-900 dark justify-between group/design-root overflow-x-hidden text-white" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="flex-grow">
+<header class="flex items-center bg-gray-900 p-4 sticky top-0 z-10">
+<button class="text-white">
+<span class="material-symbols-outlined text-3xl"> arrow_back_ios_new </span>
+</button>
+<h1 class="text-xl font-bold text-center flex-1 pr-8">Team Member Profile</h1>
+</header>
+<main class="p-4 @container">
+<section class="flex flex-col items-center text-center mb-8">
+<div class="relative mb-4">
+<img alt="Ethan Carter's profile picture" class="rounded-full h-32 w-32 object-cover border-4 border-gray-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsMof5LsBmbrsuvRBhCB--QeOzoOJyCT7a2kclUrmN_FrhcYo9x07dloRunoddi4zznPPvXYzM2iLeP7Z3NHMa_vYfYyRINLZwwpUxEDck6qMb2w0VJcio_SlGnNV5990sLFMvGPQjF3U3JIn5OU-ZwDFh0SqslqLDiRpGLdJEm3TeKkm3z_Kp_dUiOSxMb1Lr-FA_Kcu66v1aKOB_2LNbozjh630IebmPxU5aXLJB44eN0Ua9je3YPGXVhP2JOTGZ8Jy2vuyD0mA"/>
+<div class="absolute bottom-0 right-0 bg-[var(--primary-color)] p-2 rounded-full">
+<span class="material-symbols-outlined text-white"> directions_run </span>
+</div>
+</div>
+<h2 class="text-2xl font-bold">Ethan Carter</h2>
+<p class="text-gray-400">Average Pace: 8:15 / mile</p>
+<p class="text-gray-400 mt-2 max-w-md">Avid runner and team player. Always up for a challenge!</p>
+</section>
+<section class="mb-8">
+<h3 class="text-lg font-bold mb-4">Pace Calculator</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex flex-col">
+<label class="text-sm font-medium text-gray-400 mb-2" for="van-pace">Pace per Van (min/mile)</label>
+<input class="form-input w-full rounded-lg border-gray-700 bg-gray-800 text-white placeholder:text-gray-500 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" id="van-pace" placeholder="e.g. 8:30" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="text-sm font-medium text-gray-400 mb-2" for="team-pace">Pace per Team (min/mile)</label>
+<input class="form-input w-full rounded-lg border-gray-700 bg-gray-800 text-white placeholder:text-gray-500 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" id="team-pace" placeholder="e.g. 9:00" type="text"/>
+</div>
+</div>
+</section>
+<div class="flex justify-center mb-8">
+<button class="flex items-center justify-center gap-2 w-full max-w-xs rounded-lg h-12 px-6 bg-[var(--primary-color)] text-white text-base font-bold shadow-lg hover:bg-opacity-90 transition-colors">
+<span class="material-symbols-outlined"> play_arrow </span>
+<span class="truncate">Start Leg</span>
+</button>
+</div>
+<section>
+<h3 class="text-lg font-bold mb-4">Runner Updates</h3>
+<div class="bg-gray-800 rounded-lg p-4">
+<div class="flex items-center gap-4">
+<img alt="Ethan Carter's profile picture" class="rounded-full h-14 w-14 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Q465Jf_SkrQYypBwQU1dnYE5Oc_9n3wdsyFT74g3EQCAihIdFB51T_rqfMORm7OJsiEuglDRmbENSQsYNBCl08_JqwXzHw8c8n0VgtJdyCFzqmY7M-zKLCRJbk79RUxzuIl8hQ2wHArovDyGVg0zckk5qB1pPMBYDyoj5ZnS7VJ3E6-sbn-LPc1itaqlbLDmkNQ2ZH3kvhGmbGxDg2GNCoozC4j9K_WZyqueWeRNS1qmBatIeAxpqLBQGyV6wxOsrcW5lLMsy2w"/>
+<div class="flex-grow">
+<p class="text-white font-medium">Ethan Carter</p>
+<p class="text-gray-400 text-sm">Current Pace: 8:15 / mile</p>
+</div>
+<div class="text-right">
+<p class="text-white font-medium">Leg 1</p>
+<div class="flex items-center gap-1 text-green-400 text-sm">
+<span class="material-symbols-outlined text-base"> trending_up </span>
+<span>-0:05</span>
+</div>
+</div>
+</div>
+<p class="text-gray-400 text-sm mt-3">Automatic pace adjustment based on real-time location.</p>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-gray-800 border-t border-gray-700">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined"> dashboard </span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-white bg-[var(--primary-color)] rounded-full px-4 py-1" href="#">
+<span class="material-symbols-outlined"> groups </span>
+<span class="text-xs font-medium">Team</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined"> settings </span>
+<span class="text-xs font-medium">Settings</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
