@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Dude, Where's My Team? - App Customization</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #1193d4;
+      --background-color: #0A0F11;
+      --card-color: #1A1F22;
+      --text-primary: #FFFFFF;
+      --text-secondary: #A0AEC0;
+      --border-color: #2D3748;
+    }
+    .theme-toggle-group {
+      background-color: var(--card-color);
+      border-radius: 9999px;
+      padding: 4px;
+      display: inline-flex;
+    }
+    .theme-toggle-button {
+      flex: 1;
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      border: none;
+      background-color: transparent;
+      color: var(--text-secondary);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    input:checked + .theme-toggle-button {
+      background-color: var(--primary-color);
+      color: var(--text-primary);
+      font-weight: 600;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]" style="font-family: 'Inter', sans-serif;">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div>
+<header class="flex items-center p-4">
+<button class="text-[var(--text-primary)]">
+<span class="material-symbols-outlined text-3xl">arrow_back_ios_new</span>
+</button>
+<h1 class="text-[var(--text-primary)] text-xl font-bold flex-1 text-center pr-8">App Customization</h1>
+</header>
+<main class="p-6">
+<section class="mb-8">
+<h2 class="text-[var(--text-secondary)] text-sm font-semibold uppercase tracking-wider mb-4">Theme</h2>
+<div class="flex justify-center">
+<div class="theme-toggle-group">
+<label class="cursor-pointer">
+<input checked="" class="sr-only" name="theme-toggle" type="radio"/>
+<div class="theme-toggle-button">Default</div>
+</label>
+<label class="cursor-pointer">
+<input class="sr-only" name="theme-toggle" type="radio"/>
+<div class="theme-toggle-button">Custom</div>
+</label>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-[var(--text-secondary)] text-sm font-semibold uppercase tracking-wider">Team Color</h2>
+<button class="text-[var(--primary-color)] font-medium text-sm flex items-center gap-1">
+<span class="material-symbols-outlined">palette</span>
+              Color Picker
+            </button>
+</div>
+<div class="grid grid-cols-5 gap-4">
+<label class="relative cursor-pointer">
+<input checked="" class="sr-only" name="team-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(255,99,71)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+<label class="relative cursor-pointer">
+<input class="sr-only" name="team-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(70,130,180)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+<label class="relative cursor-pointer">
+<input class="sr-only" name="team-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(50,205,50)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+<label class="relative cursor-pointer">
+<input class="sr-only" name="team-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(255,215,0)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+<label class="relative cursor-pointer">
+<input class="sr-only" name="team-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(218,112,214)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+<label class="relative cursor-pointer">
+<input class="sr-only" name="team-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(135,206,250)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+</div>
+</section>
+<section>
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-[var(--text-secondary)] text-sm font-semibold uppercase tracking-wider">Favorite Color</h2>
+<button class="text-[var(--primary-color)] font-medium text-sm flex items-center gap-1">
+<span class="material-symbols-outlined">palette</span>
+                  Color Picker
+              </button>
+</div>
+<div class="grid grid-cols-5 gap-4">
+<label class="relative cursor-pointer">
+<input class="sr-only" name="favorite-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(255,99,71)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+<label class="relative cursor-pointer">
+<input checked="" class="sr-only" name="favorite-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(70,130,180)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+<label class="relative cursor-pointer">
+<input class="sr-only" name="favorite-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(50,205,50)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+<label class="relative cursor-pointer">
+<input class="sr-only" name="favorite-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(255,215,0)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+<label class="relative cursor-pointer">
+<input class="sr-only" name="favorite-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(218,112,214)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+<label class="relative cursor-pointer">
+<input class="sr-only" name="favorite-color" type="radio"/>
+<div class="w-14 h-14 rounded-full bg-[rgb(135,206,250)] ring-2 ring-offset-4 ring-offset-[var(--background-color)] ring-transparent peer-checked:ring-[var(--primary-color)] transition-all duration-200"></div>
+</label>
+</div>
+</section>
+</main>
+</div>
+<footer class="p-4 pb-8">
+<button class="w-full h-14 px-6 bg-[var(--primary-color)] text-[var(--text-primary)] text-lg font-bold rounded-full shadow-lg hover:bg-opacity-90 transition-colors">
+        Save Changes
+      </button>
+</footer>
+</div>
+
+</body></html>

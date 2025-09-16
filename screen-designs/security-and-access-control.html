@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="preload"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1193d4;
+      }
+      body {
+        font-family: Inter, "Noto Sans", sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-900 text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center bg-gray-900 p-4">
+<button class="mr-4">
+<span class="material-symbols-outlined text-white">
+              arrow_back_ios
+            </span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold">Security &amp; Access Control</h1>
+<div class="w-10"></div>
+</header>
+<main class="p-6 space-y-8">
+<div class="space-y-4">
+<div>
+<h2 class="text-2xl font-bold">Multi-Team Functionality</h2>
+<p class="text-gray-400 mt-2">Manage multiple teams within a single account, ensuring data isolation for each team's location, chat, and favorites.</p>
+</div>
+<div class="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
+<span class="text-white">Enable Multi-Team</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[var(--primary-color)]"></div>
+</label>
+</div>
+</div>
+<div class="space-y-4">
+<h2 class="text-2xl font-bold">Data &amp; Privacy</h2>
+<div class="space-y-6">
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-[var(--primary-color)] mt-1">shield_person</span>
+<div>
+<h3 class="font-semibold">Team-Specific Data Isolation</h3>
+<p class="text-gray-400 text-sm">Each team's data is kept separate and secure.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-[var(--primary-color)] mt-1">lock</span>
+<div>
+<h3 class="font-semibold">User-Level Note Privacy</h3>
+<p class="text-gray-400 text-sm">Personal notes are private to each user.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<h2 class="text-2xl font-bold">Permissions</h2>
+<div class="space-y-6">
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-[var(--primary-color)] mt-1">manage_accounts</span>
+<div>
+<h3 class="font-semibold">Granular Permission Management</h3>
+<p class="text-gray-400 text-sm">Customize access levels for each team member.</p>
+</div>
+</div>
+<button class="w-full text-center py-3 bg-gray-800 rounded-lg font-semibold hover:bg-gray-700 transition-colors">Manage Permissions</button>
+</div>
+</div>
+<div class="space-y-4">
+<h2 class="text-2xl font-bold">Authentication</h2>
+<div class="space-y-6">
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-[var(--primary-color)] mt-1">fingerprint</span>
+<div>
+<h3 class="font-semibold">Secure Authentication Options</h3>
+<p class="text-gray-400 text-sm">Use biometrics or multi-factor authentication.</p>
+</div>
+</div>
+<button class="w-full text-center py-3 bg-gray-800 rounded-lg font-semibold hover:bg-gray-700 transition-colors">Configure Authentication</button>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-gray-800 border-t border-gray-700">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center gap-1 text-gray-400 p-2" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-xs">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400 p-2" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="text-xs">Race Info</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--primary-color)] p-2 rounded-full" href="#">
+<div class="p-2 bg-[var(--primary-color)] rounded-full -mt-8 border-4 border-gray-800">
+<span class="material-symbols-outlined text-white text-3xl">settings</span>
+</div>
+<span class="text-xs mt-1">Settings</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
